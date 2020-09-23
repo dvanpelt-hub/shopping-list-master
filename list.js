@@ -1,33 +1,23 @@
+
 //appends user input list item to shopping list
-/*$(function() {
+$(function() {
 
     $("#js-shopping-list-form").submit(function(event) {
         event.preventDefault();
         const userText = $(this).find("#shopping-list-entry"); 
 
-        $(".shopping-list").append("<li>"
-        <span class="shopping-item"></span>
-            < div class= "shopping-item-controls" >
-          <button class="shopping-item-toggle">
-            <span class="button-label">check</span>
-          </button>
+        $(".shopping-list").append(`<li>
+        <span class="shopping-item">${userText.val()}</span>
+          <div class= "shopping-item-controls">
+            <button class="shopping-item-toggle"> 
+              <span class="button-label">check</span> 
+            </button> 
           <button class="shopping-item-delete">
             <span class="button-label">delete</span>
           </button>
-        </div >
-        </li>");
+          </div >
+        </li>`);
 
-        console.log("User added new item to list: " + userText.val());
-    });
-});*/
-
-$(function () {
-
-    $("#js-shopping-list-form").submit(function (event) {
-        event.preventDefault();
-        const userText = $(this).find("#shopping-list-entry");
-
-        $(".shopping-list").append("<li>" + userText.val() + "</li>");
         console.log("User added new item to list: " + userText.val());
     });
 });
