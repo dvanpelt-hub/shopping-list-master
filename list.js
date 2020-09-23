@@ -1,5 +1,5 @@
 //appends user input list item to shopping list
-$(function() {
+/*$(function() {
 
     $("#js-shopping-list-form").submit(function(event) {
         event.preventDefault();
@@ -19,9 +19,9 @@ $(function() {
 
         console.log("User added new item to list: " + userText.val());
     });
-});
+});*/
 
-/*$(function () {
+$(function () {
 
     $("#js-shopping-list-form").submit(function (event) {
         event.preventDefault();
@@ -30,7 +30,7 @@ $(function() {
         $(".shopping-list").append("<li>" + userText.val() + "</li>");
         console.log("User added new item to list: " + userText.val());
     });
-});*/
+});
 
 //check and uncheck items on the list by clicking the "Check" button
 $(function() {
